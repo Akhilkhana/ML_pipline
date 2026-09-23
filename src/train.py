@@ -12,10 +12,7 @@ import mlflow
 os.environ["MLFLOW_TRACKING_URI"] = "https://dagshub.com/Akhilkhana/machinelearningpipline.mlflow"
 os.environ["MLFLOW_TRACKING_USERNAME"] = "Akhilkhana"
 
-if not os.getenv("MLFLOW_TRACKING_PASSWORD"):
-    raise RuntimeError(
-        "Set MLFLOW_TRACKING_PASSWORD to a DagsHub access token before training."
-    )
+os.environ["MLFLOW_TRACKING_PASSWORD"] = "09b50ceb4d152fb348eaea8464410df91ff45c1f"
 
 def hyperparameter_tunning(X_train,y_train,param_grid):
     rf= RandomForestClassifier()

@@ -4,7 +4,7 @@ preprocess:
 
 
 train:
-  data: data/raw/data.csv
+  data: data/processed/data.csv
   model: models/model.pkl
   random_state: 42
   n_estimators: 100
